@@ -1,0 +1,2 @@
+FROM nginx:latest@sha256:56874d0ec4c0c6a4a3d960bdbeda30c4ac03ef4673e7b560968293c2a04094ef
+COPY index.html /usr/share/nginx/html
