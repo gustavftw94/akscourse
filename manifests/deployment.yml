@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: gustavftwakscourse 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gustavftwakscourse
+  template:
+    metadata:
+      labels:
+        app: gustavftwakscourse 
+    spec:
+      containers:
+        - name: gustavftwakscourse 
+          image: aksdevopsacr1.azurecr.io/gustavftwakscourse
+          ports:
+          - containerPort: 80
